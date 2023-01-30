@@ -1,6 +1,8 @@
 import Greet from "./components/Greet";
+import Oscar from "./components/Oscar";
 import { Person } from "./components/Person";
 import PersonList from "./components/PersonList";
+import Status from "./components/Status";
 
 function App() {
   const p1 = {
@@ -18,6 +20,10 @@ function App() {
       <Greet name="harry" messageCount={10} />
       <Person name={p1} />
       <PersonList names={personList} />
+      <Status status="loading" />
+      <Oscar>
+        <h2>Welcome!</h2>
+      </Oscar>
     </div>
   );
 }
