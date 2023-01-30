@@ -17,7 +17,7 @@ function App() {
 
   return (
     <div className="App">
-      <Greet name="harry" messageCount={10} />
+      <Greet name="harry" />
       <Person name={p1} />
       <PersonList names={personList} />
       <Status status="loading" />
