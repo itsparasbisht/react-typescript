@@ -1,3 +1,4 @@
+import Button from "./components/Button";
 import Greet from "./components/Greet";
 import Oscar from "./components/Oscar";
 import { Person } from "./components/Person";
@@ -24,6 +25,9 @@ function App() {
       <Oscar>
         <h2>Welcome!</h2>
       </Oscar>
+      <Button
+        handleClick={(event, id) => console.log("Button clicked", event, id)}
+      ></Button>
     </div>
   );
 }
