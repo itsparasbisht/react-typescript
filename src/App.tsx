@@ -1,4 +1,5 @@
 import Button from "./components/Button";
+import Container from "./components/Container";
 import Greet from "./components/Greet";
 import Input from "./components/Input";
 import Oscar from "./components/Oscar";
@@ -30,6 +31,7 @@ function App() {
         handleClick={(event, id) => console.log("Button clicked", event, id)}
       ></Button>
       <Input value="" />
+      <Container styles={{ backgroundColor: "red" }} />
     </div>
   );
 }
