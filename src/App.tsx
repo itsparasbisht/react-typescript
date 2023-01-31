@@ -1,5 +1,6 @@
 import Button from "./components/Button";
 import Greet from "./components/Greet";
+import Input from "./components/Input";
 import Oscar from "./components/Oscar";
 import { Person } from "./components/Person";
 import PersonList from "./components/PersonList";
@@ -28,6 +29,7 @@ function App() {
       <Button
         handleClick={(event, id) => console.log("Button clicked", event, id)}
       ></Button>
+      <Input value="" />
     </div>
   );
 }
