@@ -1,15 +1,10 @@
-type PersonProps = {
-  name: {
-    fname: string;
-    lname: string;
-  };
-};
+import { PersonProps } from "./Person.types";
 
-export const Person = (props: PersonProps) => {
+export const Person = ({ name }: PersonProps) => {
   return (
     <div>
       <h1>
-        {props.name.fname} {props.name.lname}
+        {name.fname} {name.lname}
       </h1>
     </div>
   );
