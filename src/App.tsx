@@ -4,6 +4,7 @@ import Button from "./components/Button";
 import Container from "./components/Container";
 import Box from "./components/context/Box";
 import { ThemeContextProvider } from "./components/context/ThemeContext";
+import { List } from "./components/generics/List";
 import Greet from "./components/Greet";
 import Input from "./components/Input";
 import Oscar from "./components/Oscar";
@@ -21,6 +22,8 @@ function App() {
     { fname: "light", lname: "yagami" },
     { fname: "l", lname: "lawliet" },
   ];
+
+  const items = ["apple", "banana", "cherry"];
 
   return (
     <ThemeContextProvider>
@@ -42,6 +45,8 @@ function App() {
       </div>
 
       <Private isLoggedIn={true} component={Profile} />
+
+      <List items={personList} />
     </ThemeContextProvider>
   );
 }
