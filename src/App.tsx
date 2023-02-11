@@ -1,3 +1,5 @@
+import Private from "./components/auth/Private";
+import Profile from "./components/auth/Profile";
 import Button from "./components/Button";
 import Container from "./components/Container";
 import Box from "./components/context/Box";
@@ -38,6 +40,8 @@ function App() {
 
         <Box />
       </div>
+
+      <Private isLoggedIn={true} component={Profile} />
     </ThemeContextProvider>
   );
 }
