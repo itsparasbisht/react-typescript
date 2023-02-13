@@ -11,6 +11,7 @@ import Oscar from "./components/Oscar";
 import { Person } from "./components/Person";
 import PersonList from "./components/PersonList";
 import Status from "./components/Status";
+import Toast from "./components/templateLiterals/Toast";
 
 function App() {
   const p1 = {
@@ -47,6 +48,8 @@ function App() {
       <Private isLoggedIn={true} component={Profile} />
 
       <List items={personList} />
+
+      <Toast position="center-bottom" />
     </ThemeContextProvider>
   );
 }
